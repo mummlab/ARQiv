@@ -49,9 +49,9 @@ GUI()
 ```
 
 ## Further questions
-Author: David T. White, Arife Unal Eroglu, Guohua Wang,Liyun Zhang,Sumitra Sengupta,Surendra Rajpurohit,Steven L. Walker,Jiang Qian,Jeff S. Mumm
+Author:  David T. White, Arife Unal Eroglu, Guohua Wang,Liyun Zhang,Sumitra Sengupta,Ding Ding,Surendra Rajpurohit,Steven L. Walker,Hongkai Ji,Jiang Qian,Jeff S. Mumm
 
-To any question about the package, please contact
+Any questions about the package, please contact
 Maintainer: David T. White <dwhite66@jhmi.edu>, Ding Ding <dding6@jhu.edu>
 or open an issue at Github.
 
