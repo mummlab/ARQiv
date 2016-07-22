@@ -2,7 +2,7 @@ Package: ARQiv
 Type: Package
 Title: : ARQiv-HTS,Preparing for and Completing Whole-Organism Screening at High-througput rates
 Version: 1.1.0
-Author: David T. White, Arife Unal Eroglu, Guohua Wang,Liyun Zhang,Sumitra Sengupta,Surendra Rajpurohit,Steven L. Walker,Jiang Qian,Jeff S. Mumm
+Author: David T. White, Arife Unal Eroglu, Guohua Wang,Liyun Zhang,Sumitra Sengupta,Ding Ding,Surendra Rajpurohit,Steven L. Walker,Hongkai Ji,Jiang Qian,Jeff S. Mumm
 Maintainer: David T. White <dwhite66@jhmi.edu>, Ding Ding <dding6@jhu.edu>
 Description:  The ARQiv R* package includes functions that fall into two categories - those applied to Pre-screening Assay Optimization' and 'Compound Analysis'. The functions allow the user to calculate background signal, determine sample size, run quality control tests, perform virtual experiments to simulate compound efficacy - and finally, to perform compound analysis during iterative drug screen cycles.
 Depends:
