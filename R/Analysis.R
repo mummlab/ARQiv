@@ -764,7 +764,7 @@ GUI <- function(){
   DirectoryName <- gedit(text = "", width=15, height=10, cont=tbl)
   tbl[6,8, anchor=c(0,0)] <- DirectoryName
   ###
-  tbl[4,7, anchor=c(0,0)] <- gbutton(text = "*BACKGROUND*", cont=tbl, handler = function(h,...){
+  tbl[4,7, anchor=c(0,0)] <- gbutton(text = "BACKGROUND", cont=tbl, handler = function(h,...){
     if(svalue(back_style)=="FILE"){
       svalue(bg.ratio)<- round(SIGNAL(Roy.file=Roy.file),2)
     }else svalue(bg.ratio) <- svalue(back_signal)
@@ -772,7 +772,7 @@ GUI <- function(){
   bg.ratio <-gedit(text = "", width=5, height=10, cont=tbl)
   tbl[4,8, anchor=c(0,0)] <- bg.ratio
   ###
-  tbl[9,7, anchor=c(0,0)] <- gbutton(text = "*SAMPLE SIZE*", cont=tbl, handler = function(h,...){
+  tbl[9,7, anchor=c(0,0)] <- gbutton(text = "SAMPLE SIZE", cont=tbl, handler = function(h,...){
     if(svalue(control_style)=="USE.XML"){
       if(svalue(effect_style)=="DEFAULT"){
         if(svalue(back_style)=="FILE"){
@@ -798,7 +798,7 @@ GUI <- function(){
   })
   tbl[9,8, anchor=c(0,0)] <- glabel("(.CSV)")
   ###
-  tbl[7,7, anchor=c(0,0)] <- gbutton(text = "*Z'-FACTOR*", cont=tbl, handler = function(h,...){
+  tbl[7,7, anchor=c(0,0)] <- gbutton(text = "Z'-FACTOR", cont=tbl, handler = function(h,...){
     #  Roy.file <<- gfile()
     if(svalue(control_style)==".XML"){
       if(svalue(back_style)=="FILE"){
@@ -814,7 +814,7 @@ GUI <- function(){
   zfactor_1 <-gedit(text = "", width=15, height=10, cont=tbl)
   tbl[7,8, anchor=c(0,0)] <-zfactor_1
   ####
-  tbl[8,7, anchor=c(0,0)] <- gbutton(text = "*SSMD QC*", cont=tbl, handler = function(h,...){
+  tbl[8,7, anchor=c(0,0)] <- gbutton(text = "SSMD QC", cont=tbl, handler = function(h,...){
     #  Roy.file <<- gfile()
     if(svalue(control_style)==".XML"){
       if(svalue(back_style)=="FILE"){
@@ -830,7 +830,7 @@ GUI <- function(){
   ssmd.qc_1 <-gedit(text = "", width=15, height=10, cont=tbl)
   tbl[8,8, anchor=c(0,0)] <-ssmd.qc_1
   ####
-  tbl[10,7, anchor=c(0,0)] <- gbutton(text = "*SSMD ESTIMATE*", cont=tbl, handler = function(h,...){
+  tbl[10,7, anchor=c(0,0)] <- gbutton(text = "SSMD ESTIMATE", cont=tbl, handler = function(h,...){
     #  Roy.file <<- gfile()
     if(svalue(sampling_number)!=0&svalue(sampling_time)!=0){
       if(svalue(back_style)=="FILE"){
@@ -915,7 +915,7 @@ GUI <- function(){
   DirectoryName1 <- gedit(text = "", width=15, height=10, cont=tbl)
   tbl[24,6:7, anchor=c(0,0)] <- DirectoryName1
   #ANALYSIS
-  tbl[25,5:6, anchor=c(0,0)] <- gbutton(text = "*ANALYSIS*", cont=tbl, handler = function(h,...){
+  tbl[25,5:6, anchor=c(0,0)] <- gbutton(text = "ANALYSIS", cont=tbl, handler = function(h,...){
     if(svalue(back_style1)=="FILE"){
       MULTI.REAL.TIME(Pos.file =Pos.file1, Roy.file=Roy.file1,bg.ratio = NULL, Neg.file=Neg.file1, multi.Drug.file=multi.Drug.file, well.label.file=Well.label.file,dic.output=dic.output1)
     }else MULTI.REAL.TIME(Pos.file =Pos.file1, Roy.file=NULL,bg.ratio = svalue(back_signal1), Neg.file=Neg.file1, multi.Drug.file=multi.Drug.file, well.label.file=Well.label.file,dic.output=dic.output1)
