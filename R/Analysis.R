@@ -291,7 +291,7 @@ ZFACTOR <- function(Pos.file =NULL, Roy.file=NULL, bg.ratio=NULL,Neg.file=NULL,E
   N.signal <- s.neg
 
   P.signal.o <- P.signal
-  z.factor <- 1-3*(sd(P.signal)+sd(N.signal))/abs(mean( P.signal)+mean(N.signal))
+  z.factor <- 1-3*(sd(P.signal)+sd(N.signal))/abs(mean( P.signal)－mean(N.signal))
 
   return(round(z.factor,2))
 }
